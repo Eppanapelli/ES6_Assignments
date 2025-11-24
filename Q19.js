@@ -28,3 +28,34 @@ const obj = {
   }
 };
 obj.test(); 
+
+//3. Rest, Spread and copying objects
+const product={name:"Pen", price:10};
+const copy={...product};
+console.log(copy);
+
+const a={x:1};
+const b={y:2};
+const merge={...a,...b};
+console.log(merge);
+
+const nums=[1,2,3,4,5];
+const maxValue=(...nums)=>{
+    return Math.max(...nums);
+}
+console.log(maxValue(...nums));
+
+//4.Destructuring and optional chaining
+
+const arr = [10, 20, 30];
+const [a1,b1,c1] = arr;
+console.log(a1,b1);
+
+const laptop={brand:"Dell",ram:"8GB"};
+const {brand,ram}=laptop;
+console.log(brand);
+
+const info={};
+console.log(info.user?.name);
+
+//5.Scoping 
