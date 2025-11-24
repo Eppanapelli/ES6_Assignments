@@ -59,3 +59,31 @@ const info={};
 console.log(info.user?.name);
 
 //5.Scoping 
+for(var i=0;i<3;i++){}
+console.log(i);//3 var is functional scope
+
+// for(let j=0;j<3;j++){}
+// console.log(j);//Error j is not ddefined let is a block scope
+
+//Because const doesn't allow reassignment it always stays as a constant
+
+//6.Ternary
+let kmph=50;
+const speed=kmph>60 ?"Fast":"Normal";
+console.log(speed);
+
+let age=24;
+const value=age>=18?"Adult":"Minor";
+console.log(value);
+
+
+//7.Spread,Rest and Arrays
+const nums1=[1,2,3];
+const add=[4,5];
+const afteradding=[...nums1,...add];
+console.log(afteradding);
+
+const a2=["x","y"];
+const b2=["z"];
+const array=[...a2,...b2];
+console.log(array);
